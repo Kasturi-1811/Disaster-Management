@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Before Fire Section -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <Button
+                android:id="@+id/beforeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before +"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/beforeContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example: Check gas pipelines, keep fire extinguisher ready, avoid open flames."
+            android:visibility="gone"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- During Fire Section -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <Button
+                android:id="@+id/duringBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="During +"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/duringContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example: Stay low to avoid smoke, evacuate immediately, call emergency services."
+            android:visibility="gone"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- After Fire Section -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <Button
+                android:id="@+id/afterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After +"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/afterContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example: Check for injuries, contact authorities, do not re-enter unsafe buildings."
+            android:visibility="gone"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

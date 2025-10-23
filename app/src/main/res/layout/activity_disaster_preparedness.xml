@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0F7FA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disaster Preparedness List"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp" />
+
+        <Button
+            android:id="@+id/fireBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fire"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/floodBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flood"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/earthquakeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Earthquake"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/cycloneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cyclone"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/rainBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rain"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

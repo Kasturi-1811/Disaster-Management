@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="Profile" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"/>
+
+    <!-- Disaster Preparedness button -->
+    <Button
+        android:id="@+id/disasterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disaster Preparedness"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Help & Support button -->
+    <Button
+        android:id="@+id/helpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help and Support"
+        android:layout_below="@id/disasterBtn"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
