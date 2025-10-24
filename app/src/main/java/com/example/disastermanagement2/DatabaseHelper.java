@@ -79,5 +79,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         int result = db.update(TABLE_NAME, values, COL_EMAIL + "=?", new String[]{email});
         return result > 0;
     }
+    // --- Need Help ---
+    public boolean insertHelpRequest(String name, String location, String phone, String helpType) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("CREATE TABLE IF NOT EXISTS help_requests(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, location TEXT, phone TEXT, help_type TEXT)");
+        ContentValues values = new ContentValues();
+        values.put("name", name);
+        values.put("location", location);
+        values.put("phone", phone);
+        values.put("help_type", helpType);
+        long result = db.insert("help_requests", null, values);
+        return result != -1;
+    }
+
+    // --- Offer Help ---
+    public boolean insertHelpOffer(String name, String location, String phone, String helpType) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("CREATE TABLE IF NOT EXISTS help_offers(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, location TEXT, phone TEXT, help_type TEXT)");
+        ContentValues values = new ContentValues();
+        values.put("name", name);
+        values.put("location", location);
+        values.put("phone", phone);
+        values.put("help_type", helpType);
+        long result = db.insert("help_offers", null, values);
+        return result != -1;
+    }
+
+    // --- Get all requests ---
+    public Cursor getAllHelpRequests() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        db.execSQL("CREATE TABLE IF NOT EXISTS help_requests(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, location TEXT, phone TEXT, help_type TEXT)");
+        return db.rawQuery("SELECT * FROM help_requests", null);
+    }
+
+    // --- Get all offers ---
+    public Cursor getAllHelpOffers() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        db.execSQL("CREATE TABLE IF NOT EXISTS help_offers(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, location TEXT, phone TEXT, help_type TEXT)");
+        return db.rawQuery("SELECT * FROM help_offers", null);
+    }
 
 }

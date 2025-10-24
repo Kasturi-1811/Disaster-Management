@@ -11,27 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DisasterManagement2">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name="DisasterPreparednessActivity"/>
-        <activity android:name="FireActivity"/>
-        <activity android:name="CycloneActivity"/>
-        <activity android:name="FloodActivity"/>
-        <activity android:name="RainActivity"/>
-        <activity android:name="EarthquakeActivity"/>
+
+        <!-- Preparedness & Disaster pages -->
+        <activity android:name=".DisasterPreparednessActivity" />
+        <activity android:name=".FireActivity" />
+        <activity android:name=".CycloneActivity" />
+        <activity android:name=".FloodActivity" />
+        <activity android:name=".RainActivity" />
+        <activity android:name=".EarthquakeActivity" />
+
+        <!-- Help & Support pages -->
+        <activity android:name=".HelpSupportActivity" />
+        <activity android:name=".NeedHelpActivity" />
+        <activity android:name=".OfferHelpActivity" />
+        <activity android:name=".ViewHelpOffersActivity" />
+        <activity android:name=".ViewHelpRequestsActivity" />
 
     </application>
+
 
 </manifest>

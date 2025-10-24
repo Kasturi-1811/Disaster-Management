@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/needHelpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need Help" />
+
+    <Button
+        android:id="@+id/offerHelpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Offer Help"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/viewRequestsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Help Requests"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/viewOffersBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Help Offers"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
